@@ -1,0 +1,19 @@
+{
+    "simulation_settings": {
+      "dt": 0.1,
+      "tf": 100.0
+    },
+    "simulator_settings": {
+      "g": 9.80,
+      "J0": [
+        [1, 0, 0],
+        [0, 1, 0],
+        [0, 0, 1]
+      ],
+      "m": 1,
+      "r_true": [[1, 1, 1]],
+      "attitude_initial": [0.0, 0.0, 0.0],
+      "angular_vel_initial": [0.0, 0.0, 0.0]
+    }
+  }
+  
