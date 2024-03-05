@@ -15,14 +15,14 @@ sequence.
 ## How to run
 
 ### *tom_free_movement.py*
-For this, you have to executed the python file using 
+For this, you have to execute the python file using 
 ```console
 python3 tom_free_movement.py
 ```
 It will simulate the dynamics of the attitude simulator and plot the angular velocities and attitude.
 
 ### *tom_KF.py*
-For this, you have to executed the python file using 
+For this, you have to execute the python file using 
 ```console
 python3 tom_KF.py
 ```
@@ -31,7 +31,7 @@ If the parameter *USE_OPTI_DATA* in line 31 is set to *TRUE*, the Kalman Filter 
 as *OPTI_DATA_FILE*. The folder *opti_data* contains recorded data sets similar to the data sets in the thesis. The OptiTrack files are not the raw files produced by the OptiTrack tracking tool, but contain adapted data that is directly usable by the script.
 
 ### *tom_adaptive_control.py*
-For this, you have to executed the python file using 
+For this, you have to execute the python file using 
 ```console
 python3 tom_adaptive_control.py
 ```
