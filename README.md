@@ -9,7 +9,7 @@ Files starting with *tom_* are the main entry points to the different simulation
 
 *tom_KF.py* simulates the CubeSat and approximates the CoM with a (basic) Kalman Filter. 
 
-*tom_adaptive_control.py* simulates the CubeSat and approximates the CoM with two phase, adaptive control algorithm consisting of a control based and an UKF based 
+*tom_adaptive_control.py* simulates the CubeSat and approximates the CoM with a two phase, adaptive control algorithm consisting of a control based and an UKF based 
 sequence.
 
 ## How to run
@@ -28,7 +28,7 @@ python3 tom_KF.py
 ```
 It will simulate the dynamics of the attitude simulator as well as approximate the CoM with a KF. After that, it will plot the angular velocities and attitude.
 If the parameter *USE_OPTI_DATA* in line 31 is set to *TRUE*, the Kalman Filter will run using a specified OptiTrack file. The OptiTrack file is specified in line 33, 
-as *OPTI_DATA_FILE*. The folder *opti_data* contains recorded data sets similar to the data sets in the thesis. 
+as *OPTI_DATA_FILE*. The folder *opti_data* contains recorded data sets similar to the data sets in the thesis. The OptiTrack files are not the raw files produced by the OptiTrack tracking tool, but contain adapted data that is directly usable by the script.
 
 ### *tom_adaptive_control.py*
 For this, you have to executed the python file using 
