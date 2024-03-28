@@ -3,6 +3,8 @@
 This repo contains the python code used for my bachelor thesis. In it, different approaches are tested to approximate the Center of Rotation (CoR) to Center of Mass (CoM) offset.
 It is structured as follows:
 
+*thesis.pdf* is the bachelor thesis itself. 
+
 Files starting with *tom_* are the main entry points to the different simulations.
 
 *tom_free_movement.py* simulates the free movement of the TOM-CubeSat on the attitude simulator. 
@@ -12,7 +14,22 @@ Files starting with *tom_* are the main entry points to the different simulation
 *tom_adaptive_control.py* simulates the CubeSat and approximates the CoM with a two phase, adaptive control algorithm consisting of a control based and an UKF based 
 sequence.
 
+Other files, like *printer.py*, *plotter.py* and *simulationProperties.py* are auxillary helper files.
+
 ## How to run
+
+### Packages
+To run the files, the following packages are necessary:
+
+- numpy
+- matplotlib
+- scipy
+
+If not present on your system, you can install all necessary tools using the following cmd:
+
+```console
+    pip install numpy matplotlib scipy
+```
 
 ### *tom_free_movement.py*
 For this, you have to execute the python file using 
